@@ -1,0 +1,6 @@
+framework module XDXTestFramework {
+  umbrella header "XDXTestFramework.h"
+
+  export *
+  module * { export * }
+}

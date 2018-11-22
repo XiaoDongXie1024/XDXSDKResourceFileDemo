@@ -13,7 +13,24 @@
 		23439C8C21918B930038673E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23439C8B21918B930038673E /* Assets.xcassets */; };
 		23439C8F21918B930038673E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23439C8D21918B930038673E /* LaunchScreen.storyboard */; };
 		23439C9221918B930038673E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23439C9121918B930038673E /* main.m */; };
+		23439CDA219198E10038673E /* XDXTestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23439CD72191988B0038673E /* XDXTestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23439CDC2191991A0038673E /* XDXTestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23439CD72191988B0038673E /* XDXTestFramework.framework */; };
+		2398F049219A7BE9009A5C23 /* XDXAllResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2398F048219A7BE8009A5C23 /* XDXAllResources.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23439CDB219198E10038673E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23439CDA219198E10038673E /* XDXTestFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23439C7F21918B8E0038673E /* XDXSDKResourceFileDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDXSDKResourceFileDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +43,8 @@
 		23439C8E21918B930038673E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23439C9021918B930038673E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23439C9121918B930038673E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23439CD72191988B0038673E /* XDXTestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XDXTestFramework.framework; path = Frameworks/XDXTestFramework.framework; sourceTree = "<group>"; };
+		2398F048219A7BE8009A5C23 /* XDXAllResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = XDXAllResources.bundle; path = Frameworks/XDXTestFramework.framework/XDXAllResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23439CDC2191991A0038673E /* XDXTestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +62,10 @@
 		23439C7621918B8E0038673E = {
 			isa = PBXGroup;
 			children = (
+				2398F048219A7BE8009A5C23 /* XDXAllResources.bundle */,
 				23439C8121918B8E0038673E /* XDXSDKResourceFileDemo */,
 				23439C8021918B8E0038673E /* Products */,
+				23439CCD219193310038673E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +93,14 @@
 			path = XDXSDKResourceFileDemo;
 			sourceTree = "<group>";
 		};
+		23439CCD219193310038673E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23439CD72191988B0038673E /* XDXTestFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +111,7 @@
 				23439C7B21918B8E0038673E /* Sources */,
 				23439C7C21918B8E0038673E /* Frameworks */,
 				23439C7D21918B8E0038673E /* Resources */,
+				23439CDB219198E10038673E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2398F049219A7BE9009A5C23 /* XDXAllResources.bundle in Resources */,
 				23439C8F21918B930038673E /* LaunchScreen.storyboard in Resources */,
 				23439C8C21918B930038673E /* Assets.xcassets in Resources */,
 				23439C8A21918B8E0038673E /* Main.storyboard in Resources */,
@@ -286,6 +318,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 769TK3DTRY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = XDXSDKResourceFileDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +340,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 769TK3DTRY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = XDXSDKResourceFileDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
