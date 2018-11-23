@@ -178,7 +178,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp -rf ${SRCROOT}/XDXTestFramework/zh-Hans.lproj/ ${SRCROOT}/XDXTestFramework/XDXAllResources.bundle/zh-Hans.lproj\ncp -rf ${SRCROOT}/XDXTestFramework/en.lproj/ ${SRCROOT}/XDXTestFramework/XDXAllResources.bundle/en.lproj\n# 请输入本项目编译出来的framework在你电脑里的真实路径，例如下\n# cp -rf ${SRCROOT}/../../../../Library/Developer/Xcode/DerivedData/XDXTestFramework-aacfsllmcdfuudarhgdrwpswafzw/Build/Products/Debug-iphoneos/XDXTestFramework.framework/TestJumpVC.nib ${SRCROOT}/XDXTestFramework/XDXAllResources.bundle/xibs\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp -rf ${SRCROOT}/XDXTestFramework/zh-Hans.lproj/ ${SRCROOT}/XDXTestFramework/XDXAllResources.bundle/zh-Hans.lproj\ncp -rf ${SRCROOT}/XDXTestFramework/en.lproj/ ${SRCROOT}/XDXTestFramework/XDXAllResources.bundle/en.lproj\n# 请输入本项目编译出来的framework在你电脑里的真实路径，例如下\ncp -rf ${SRCROOT}/../../../../Library/Developer/Xcode/DerivedData/XDXTestFramework-aacfsllmcdfuudarhgdrwpswafzw/Build/Products/Debug-iphoneos/XDXTestFramework.framework/TestJumpVC.nib ${SRCROOT}/XDXTestFramework/XDXAllResources.bundle/xibs\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
